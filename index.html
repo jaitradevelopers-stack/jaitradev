@@ -168,7 +168,7 @@
                 <span class="text-danger blinking-text">&nbsp;(NEW)</span>
               </h5>
             </a>
-            <a href="vihari-4.html"
+            <a id="downloadLayout" style="cursor: pointer"
               ><p class="text-danger">Click Here For Plot Availability.</p></a
             >
 
@@ -1710,7 +1710,7 @@
                 </h5>
                 <iframe
                   class="position-relative rounded w-100 h-100"
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3799.8863370107997!2d82.807662!3d17.749994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQ0JzYwLjAiTiA4MsKwNDgnMjcuNiJF!5e0!3m2!1sen!2sin!4v1716352915020!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7599.77241926923!2d82.8076667!3d17.75!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a398500643350eb%3A0xa5765bc31e230980!2sVihari%20gardens%204!5e0!3m2!1sen!2sin!4v1717544766868!5m2!1sen!2sin"
                   frameborder="0"
                   style="min-height: 300px; border: 0"
                   allowfullscreen=""
@@ -1762,9 +1762,14 @@
             </h4>
             <div class="row">
               <div class="col-md-6">
-                <a href=""
+                <a href="vihari-4.html"
                   ><h6 class="animated fadeIn p-3">
-                    <span class="text-secondary">Vihari Gardens - 1 </span>
+                    <span class="text-secondary">Vihari Gardens - 4 </span>
+                  </h6>
+                </a>
+                <a href="vihari-3.html"
+                  ><h6 class="animated fadeIn p-3">
+                    <span class="text-secondary">Vihari Gardens - 3 </span>
                   </h6>
                 </a>
                 <a href=""
@@ -1772,9 +1777,9 @@
                     <span class="text-secondary">Vihari Gardens - 2 </span>
                   </h6>
                 </a>
-                <a href="vihari-3.html"
+                <a href=""
                   ><h6 class="animated fadeIn p-3">
-                    <span class="text-secondary">Vihari Gardens - 3 </span>
+                    <span class="text-secondary">Vihari Gardens - 1 </span>
                   </h6>
                 </a>
               </div>
@@ -1874,7 +1879,7 @@
 
       setInterval(blinkText, 500);
       // nger
-      // Download script
+      // Download script for brochure
       document
         .getElementById('downloadBrchr')
         .addEventListener('click', function () {
@@ -1887,6 +1892,29 @@
           // Set the link attributes
           link.href = filePath;
           link.download = 'vihari-gardens-4-brochure.pdf'; // The name of the file after downloading
+
+          // Append the link to the body (required for some browsers)
+          document.body.appendChild(link);
+
+          // Programmatically click the link to trigger the download
+          link.click();
+
+          // Remove the link from the document
+          document.body.removeChild(link);
+        });
+      // Download script for plot availability
+      document
+        .getElementById('downloadLayout')
+        .addEventListener('click', function () {
+          // Create a link element
+          const link = document.createElement('a');
+
+          // Set the file path (relative to your project directory)
+          const filePath = 'img/vihari-4/layout.jpg'; // Adjust this path to your file location
+
+          // Set the link attributes
+          link.href = filePath;
+          link.download = 'vihari-4-layout.jpg'; // The name of the file after downloading
 
           // Append the link to the body (required for some browsers)
           document.body.appendChild(link);
