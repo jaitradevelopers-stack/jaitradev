@@ -7,14 +7,7 @@ twilio@123 -- Passcode
 
 
 
-.close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: white;
-        font-size: 30px;
-        cursor: pointer;
-      }
-
-
-      <span class="close" onclick="closeModal()">&times;</span>
+Add icons to past projects
+About us page
+Remove and add images in index.html -- two images get those. 
+Add pomphlet in vihar-4 page.
