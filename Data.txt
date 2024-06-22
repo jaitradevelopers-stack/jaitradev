@@ -4,3 +4,17 @@ S3S3QA83PYY75JX9V9L6Y6T8 -- twilio recovery code
 AC49d3c7382130bf08cb61ceb7b4cf7c97 -- Account SID
 0de30eda78ae3f9dec0afd90d94ba651 -- Auth tOKEN
 twilio@123 -- Passcode
+
+
+
+.close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+
+      <span class="close" onclick="closeModal()">&times;</span>
