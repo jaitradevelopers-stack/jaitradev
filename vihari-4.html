@@ -234,7 +234,7 @@
       <div class="container-fluid header bg-white mt-1">
         <div class="mt-3 row" >
           <img src="img/vihari-4/site-images/7.jpeg" style="height:80vh;filter:contrast(150%)" class="col-md-12 border rounded">
-          <div style="position:absolute;z-index: 20;top:423px;left:110px;background-color: #414065;width:250px;" class="d-flex flex-column align-items-center justify-content-center"><h1 style="color:white;">VIHARI-4</h1><h4 style="color:white;">Ravikamatham</h4></div>
+          <div style="position:absolute;z-index: 20;top:423px;left:110px;background-color: #414065;width:250px;" class="d-flex flex-column align-items-center justify-content-center"><h1 style="color:white;" >VIHARI-4</h1><h4 style="color:white;">Ravikamatham</h4></div>
         </div>
         <!-- <div class="row g-0 justify-content-center mt-5">
           <div class="col-md-10 pt-5 mt-lg-5 d-flex justify-content-center">
@@ -317,8 +317,8 @@
         <div class="row g-0 align-items-center flex-column flex-md-row">
             <div class="col-md-12 p-5 mt-lg-5">
                 <div class="p-2 me-2 mt-5 mb-5 pl-5 col-md-12 d-flex flex-column align-items-center">
-                    </i><h1 style="font-size:50px;font-weight:1000;padding-left:40px;" class="text-secondary">Property Highlights </h1>
-                    <p style="padding-left:40px;" class="col-md-6">
+                    </i><h1 style="font-size:50px;font-weight:1000;padding-left:40px; " class="text-secondary">Property Highlights </h1>
+                    <p style="padding-left:40px; " class="col-md-6">
                       Discover a luxurious property with elegant design, modern amenities, lush landscapes, pristine pool, and secure, serene surroundings for a harmonious living experience.
                     </p>
                 </div>
@@ -346,10 +346,10 @@
       <!-- Phamplet Start -->
       <div class="row g-0 justify-content-center ">
         <div class="col-md-12 d-flex flex-column justify-content-center align-items-center pt-5">
-          <h1 class="animated fadeIn text-secondary " style="padding-left:90px;font-size:50px;">              
+          <h1 class="animated fadeIn text-secondary " style="padding-left:90px;font-size:50px; ">              
               Project Details
             </h1>    
-            <p style="padding-left:90px;" class="col-md-6">
+            <p style="padding-left:90px; " class="col-md-6">
               Download our comprehensive template to explore detailed property features, amenities, and highlights. Get all the information you need in one convenient document.
             </p>      
           
@@ -359,7 +359,7 @@
       <div class="row g-0 justify-content-center">
         <!-- POMPHLET MODAL STARTS -->
         <div id="pomphlet-modal" style="display:none;position:fixed;top: 122px;left:0px;z-index: 20;width: 100%;height:100%;background-color: black;">
-          <span class="close" onclick="closeModal()">&times;</span>
+          <span class="close" onclick="pompletcloseModal()">&times;</span>
           <strong class="download" id="downloadBrchr"  ><i class="bi bi-download text-primary" style="font-size:18px;"></i></strong>
           
           <div class="w3-content w3-display-container">
@@ -416,10 +416,10 @@
           <hr />
         </div> -->
         <div class="col-md-12 d-flex flex-column justify-content-center align-items-center pt-1">
-          <h1 class="animated fadeIn text-secondary " style="padding-left:90px;font-size:50px;">              
+          <h1 class="animated fadeIn text-secondary " style="padding-left:90px;font-size:50px; ">              
               Check the layout
             </h1>    
-            <p style="padding-left:90px;" class="col-md-6">
+            <p style="padding-left:90px; " class="col-md-6">
               Explore our plot layout, showcasing nearby amenities and key area information for a convenient and vibrant lifestyle in a well-connected neighborhood.
             </p>      
           
@@ -437,23 +437,27 @@
                 class="img-fluid"
                 src="img/vihari-4/layout.jpg"
                 alt=""
-                style="border-radius: 5px"
+                style="border-radius: 5px;cursor:pointer;"
+                id="downloadlayout"
               />
             </div>
           </div>
         </div>
       </div>
       <!-- Layout End -->
+      <!-- Highlights Start -->
       <div class="row g-0 justify-content-center">
-        <div class="col-md-10 d-flex justify-content-center pt-5">
-          <a href=""
-            ><h2 class="animated fadeIn">
-              <span class="">Project Highlights </span>
-            </h2>
-          </a>
+        <div class="col-md-12 d-flex flex-column justify-content-center align-items-center pt-1">
+          <h1 class="animated fadeIn text-secondary " style="font-size:50px; ">              
+              Project Highlights
+            </h1>    
+            <p style="padding-left:90px; " class="col-md-6">
+              Discover luxurious living with top-notch amenities, security features, leisure options, and recreational facilities, all designed to enhance your comfort and lifestyle.
+            </p>      
+          
         </div>
         <div
-          class="col-md-10 p-5 d-flex flex-column justify-content-center bg-secondary border border-primary border-2 border-radius"
+          class="col-md-10 p-5 mt-3 d-flex flex-column justify-content-center bg-secondary border border-primary border-2 border-radius"
         >
           <div class="row">
             <div
@@ -629,8 +633,8 @@
       </div>
       <!-- Highlights End -->
 
-      <!-- Highlights Start -->
-      <!-- hghreiugeruig -->
+      
+      
       <!-- <div class="container-fluid header bg-white p-0 mt-2">
         <div
           class="row g-0 flex-column flex-md-row d-flex justify-content-center"
@@ -685,37 +689,57 @@
       </div> -->
 
       <!-- Highlight End -->
-      <!-- Location Highlights Start -->
+      <!-- Benefits Start -->
       
-      <!-- <div class="container-fluid header bg-white p-0 mt-2">
+      <div class="container-fluid header bg-white p-0 mt-4">
         <div class="row g-0 align-items-center flex-column flex-md-row">
-          <div class="col-md-12 p-5 mt-lg-5">
+          <div class="col-md-12 d-flex flex-column justify-content-center align-items-center pt-1">
+            <h1 class="animated fadeIn text-secondary " style="padding-left:90px;font-size:50px; ">              
+                Benefits of Investing
+              </h1>    
+              <!-- <p style="padding-left:90px;" class="col-md-6">
+                Discover luxurious living with top-notch amenities, security features, leisure options, and recreational facilities, all designed to enhance your comfort and lifestyle.
+              </p>       -->
+            
+          </div>
+          <div class="col-md-12 p-5 ">
             <h4 class="display-7 animated fadeIn mb-1">
               
-              <span class="text-primary p-3">Location Highlights </span>
+              
             </h4>
             <div class="row">
               <div class="col-md-6">
-                <ul
-                  class="p-5 text-secondary"
-                  style="font-size: medium; font: calc(1rem + 1vmin)"
-                >
-                  <li class="text-danger">
-                    RTC Bus Available for Every 30mins from Site
-                  </li>
-                  <li>22 km from Anakapalli (District HQ)</li>
-                  <li>50 km from NAD Jn.</li>
-                  <li>40 km from Gajuwaka</li>
-                  <li>25 km from Narsipatnam Town</li>
+                <img
+                  class="img-fluid"
+                  src="img/vihari-4//imgs/pexels-lucadross-4129849.jpg"
+                  alt=""
+                  style="border-radius: 5px;cursor:pointer;width:624px;height:450px;"
                   
-                  <li>4 km from Ravikamatham (Mandal HQ)</li>
-                  <li>3 km from Tattabandha Jn.</li>
+                />
+              </div>
+              <div class="col-md-6">
+                <ul
+                  
+                  style="font-size: medium; font: calc(1rem + 1vmin);font-family:math;color:indianred;"
+                >
+                <li class="mb-2">Project situated about 45 kms from Gajuwaka and just 4km from Ravikamatham Mandal Head Quarter.</li>
+                  <li class="mb-2">RTC Bus Available for Every 30mins from Site</li>
+                  
+                  <li class="mb-2">Minimum 3 days stay at farm land in a year for the customer holding a minimum of 200 Sq yards stay increases in proportion to land holding.</li>
+                  <li class="mb-2">Project facing 40 feet R&B road connecting from Thattabandha to Ravikamatham</li>
+                  <li class="mb-2">Project is just adjacent to residential area and suitable for individual Residential building construction and best suitable for Resorts.</li>
+                  <li class="mb-2">All the primary amenities i.e., School, Hospital, Grama sachivalayam, Raithu barosa Kendram are hardly at a distance to 300metres from the project location</li>
+                  <li class="mb-2">Project is located at the core area which is nearer to all the major areas i.e., Anakapalle NH, Thallapalem NH, Ravikamatam Mandal Head Quarter </li>
+                  <li class="mb-2">Investment with very good scope of returns.</li>
+                  <li class="mb-2">A good investment option for guaranteed future returns</li>
+                  
+
                   
                 </ul>
               </div>
               
-              <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h5 class="animated fadeIn mb-4">
+              <!-- <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s"> -->
+                <!-- <h5 class="animated fadeIn mb-4">
                   <span class="text-danger"
                     >Drive To Vihari Gardens - 4<i class="bi bi-compass"></i
                   ></span>
@@ -729,13 +753,14 @@
                   allowfullscreen=""
                   aria-hidden="false"
                   tabindex="0"
-                ></iframe>
-              </div>
+                ></iframe> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
-      </div> -->
-      <!-- Location  Highlight End -->
+      </div>
+      
+      <!-- Benefits End -->
       <!-- Call to Action Start -->
       <div class="container-xxl py-5">
         <div class="container">
@@ -744,28 +769,32 @@
               class="bg-white rounded p-4"
               style="border: 1px dashed rgba(0, 185, 142, 0.3)"
             >
-              <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                  <img
-                    class="img-fluid rounded w-100"
-                    src="img/call-to-action.jpg"
-                    alt=""
-                  />
+              <div class="row g-5 ">
+                <div class="col-lg-6 wow fadeIn " data-wow-delay="0.1s">
+                  <h1 class="mb-3" style=" ">Site Address</h1>
+                  <p class="mb-2 d-flex ">
+                    <strong class="col-md-10" style=" "> Vihari Gardends-4, Gompa Village, Near Thattabandha, Ravikamatam (Mandal), Anakapalle(Dist), Andhra Pradesh.</strong>
+                  </p>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                   <div class="mb-4">
-                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
-                    <p>
-                      Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem
-                      kasd vero ipsum sit sit diam justo sed vero dolor duo.
-                    </p>
+                    <h1 class="mb-3" style=" ">Location</h1>
+                    <iframe
+                  class="position-relative rounded w-100 h-100"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7599.77241926923!2d82.8076667!3d17.75!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a398500643350eb%3A0xa5765bc31e230980!2sVihari%20gardens%204!5e0!3m2!1sen!2sin!4v1717544766868!5m2!1sen!2sin"
+                  frameborder="0"
+                  style="min-height: 300px; border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
                   </div>
-                  <a href="" class="btn btn-primary py-3 px-4 me-2"
+                  <!-- <a href="" class="btn btn-primary py-3 px-4 me-2"
                     ><i class="fa fa-phone-alt me-2"></i>Make A Call</a
                   >
                   <a href="" class="btn btn-dark py-3 px-4"
                     ><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a
-                  >
+                  > -->
                 </div>
               </div>
             </div>
@@ -964,6 +993,7 @@
       }
       
       function showDivs(n) {
+        
         var i;
         var x = document.getElementsByClassName("mySlides");
         if (n > x.length) {slideIndex = 1}
@@ -976,39 +1006,39 @@
       </script>
     <script>
         
-      var slideIndex = 1;
-      var modal = document.getElementById("pomphlet-modal");
-      var slides = document.getElementsByClassName("pomphletSlides");
+      var pompletslideIndex = 1;
+      var pompletmodal = document.getElementById("pomphlet-modal");
+      var pompletslides = document.getElementsByClassName("pomphletSlides");
       // var images = document.getElementsByClassName("gallery-image");
       var contactInfoElement = document.getElementById("contactInfoGallery");
       // contactInfoGallery
 
       function OpenPomphletGalleryModal() {
-          modal.style.display = "flex";
+        pompletmodal.style.display = "flex";
           contactInfoElement.style.display = "none";
           console.log("WindowScroll")
           window.scrollTo(0, 0);
       }
 
-      function closeModal() {
-          modal.style.display = "none";
-          contactInfoElement.style.display = "flex";
+      function pompletcloseModal() {
+        pompletmodal.style.display = "none";
+        contactInfoElement.style.display = "flex";
       }
-      showDivs(slideIndex);
+      pompletshowDivs(pompletslideIndex);
       
       function plusDivspmp(n) {
-        showDivs(slideIndex += n);
+        pompletshowDivs(pompletslideIndex += n);
       }
       
-      function showDivs(n) {
+      function pompletshowDivs(n) {
         var i;
         var x = document.getElementsByClassName("pomphletSlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
+        if (n > x.length) {pompletslideIndex = 1}
+        if (n < 1) {pompletslideIndex = x.length}
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";  
         }
-        x[slideIndex-1].style.display = "block";  
+        x[pompletslideIndex-1].style.display = "block";  
       }
 
 
@@ -1034,6 +1064,28 @@
           // Remove the link from the document
           document.body.removeChild(link);
         });
+        document
+        .getElementById('downloadlayout')
+        .addEventListener('click', function () {
+          // Create a link element
+          const link = document.createElement('a');
+
+          // Set the file path (relative to your project directory)
+          const filePath = 'img/vihari-4/layout.jpg'; // Adjust this path to your file location
+
+          // Set the link attributes
+          link.href = filePath;
+          link.download = 'vihari-gardens-4-layout.jpg'; // The name of the file after downloading
+
+          // Append the link to the body (required for some browsers)
+          document.body.appendChild(link);
+
+          // Programmatically click the link to trigger the download
+          link.click();
+
+          // Remove the link from the document
+          document.body.removeChild(link);
+        });  
       </script>  
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
