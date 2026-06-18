@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-  --primary: #00b98e;
-  --secondary: #ff6922;
-  --light: #effdf5;
-  --dark: #0e2e50;
+  --primary: #059669;
+  --secondary: #ea580c;
+  --light: #f0fdf4;
+  --dark: #0f172a;
 }
 
 .back-to-top {
@@ -450,27 +450,23 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap'); */
 
-ul {
+ul.modern-list {
   list-style: none;
-}
-ul > li {
-  &::before {
-    content: '🌑';
-    transform: scale(0.2);
-    display: inline-block;
-    animation: pulse infinite alternate 0.9s;
-  }
-  @for $i from 1 through 10 {
-    &:nth-child(#{$i}) {
-      &::before {
-        animation-delay: -#{$i / 5}s;
-      }
-    }
-  }
+  padding-left: 0;
 }
 
-@keyframes pulse {
-  to {
-    transform: scale(0.69);
-  }
+ul.modern-list > li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul.modern-list > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
 }
