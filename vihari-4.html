@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -37,67 +37,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-
     <!-- Current Page Stylesheet -->
     <!-- <link href="css/vihar-4.css" rel="stylesheet" /> -->
 
     <!-- Icon of Jaitri Developers -->
     <link rel="icon" href="img/Jaitra-Dev.png" />
-    <style>
-      .image-container {
-            margin-bottom: 10px; /* Adjust this value to control the vertical gap */
-        }
-        .gap-between-images {
-            margin-left: 20px; /* Adjust this value to control the horizontal gap */
-        }
-        .close {
-        position: absolute;
-        top: 0px;
-        right: 20px;
-        color: maroon;
-        font-size: 30px;
-        cursor: pointer;
-        font-weight: bold;
-        }
-
-        .download {
-        position: absolute;
-        top: 0px;
-        right: 50px;
-        
-        font-size: 30px;
-        cursor: pointer;
-        font-weight: bold;
-        }
-        .w3-button.w3-black.w3-display-left, 
-    .w3-button.w3-black.w3-display-right {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 60px; /* Increase the size of the button */
-        height: 60px; /* Increase the size of the button */
-        font-size: 36px; /* Increase the size of the arrow */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        color: white;
-        border: none;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .w3-button.w3-black.w3-display-left {
-        left: -70px; /* Position the button outside the left side of the image */
-    }
-
-    .w3-button.w3-black.w3-display-right {
-        right: -70px; /* Position the button outside the right side of the image */
-    }
-
-    .w3-button.w3-black.w3-display-left:hover, 
-    .w3-button.w3-black.w3-display-right:hover {
-        background-color: rgba(0, 0, 0, 0.8); /* Darken the background on hover */
-    }
-
-    </style>
+    <link href="css/modern.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -119,35 +64,26 @@
       </div>
       <!-- Spinner End -->
       <!-- Contact Info STARTS -->
-      <div class="row" style="color: white;font-size:15px;" id="contactInfoGallery">
-        <div
-          class="col-md-8 bg-dark d-flex align-items-center justify-content-between text-center text-white"
-          style="padding-left: 100px; padding-right: 100px"
-        >
-          <span
-            ><i class="bi bi-telephone-fill text-secondary">&nbsp;&nbsp;</i
-            ><span style="color: lavender">+91 9988838367</span></span
-          >
-          <span
-            ><i class="bi bi-envelope-open-fill text-secondary"></i>&nbsp;&nbsp;</i
-            ><span style="color: lavender">jaitradevelopers@gmail.com</span></span
-          >
-          <span
-            ><i class="bi bi-clock-history text-secondary"></i>&nbsp;&nbsp;</i
-            ><span style="color: lavender">OPENING: 09:00AM - 06:00PM</span></span
-          >
-          
+      <div class="top-bar" id="contactInfoGallery">
+        <div class="top-bar-contact">
+          <span class="top-bar-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+919988838367">+91 9988838367</a>
+          </span>
+          <span class="top-bar-item">
+            <i class="bi bi-envelope-open-fill"></i>
+            <a href="mailto:jaitradevelopers@gmail.com">jaitradevelopers@gmail.com</a>
+          </span>
+          <span class="top-bar-item top-bar-item--hours">
+            <i class="bi bi-clock-history"></i>
+            OPENING: 09:00AM - 06:00PM
+          </span>
         </div>
-        <div class="col-md-4 bg-dark p-4">
-          <a href="https://www.facebook.com/profile.php?id=61559593419435" 
-          target="_blank"><i class="bi bi-facebook " style="color:lavender"></i></a>
-          <a href="https://www.instagram.com/jaitradevelopers?utm_source=qr&igsh=MTIyNnZkaTZ2eTMzcg==s"
-          target="_blank"><i class="bi bi-instagram" style="color:lavender;margin-left:16px;" ></i></a>
-          <a href="https://t.me/Jaitradevelopers"
-          target="_blank"><i class="bi bi-telegram" style="color:lavender;margin-left:16px;" ></i></a>
-          <a href="https://whatsapp.com/channel/0029Vabd7fxA2pL6AJnZa340"
-          target="_blank"><i class="bi bi-whatsapp" style="color:lavender;margin-left:16px;" ></i></a>
-          
+        <div class="top-bar-social">
+          <a href="https://www.facebook.com/profile.php?id=61559593419435" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jaitradevelopers?utm_source=qr&igsh=MTIyNnZkaTZ2eTMzcg==s" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://t.me/Jaitradevelopers" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          <a href="https://whatsapp.com/channel/0029Vabd7fxA2pL6AJnZa340" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
       <!-- Contact Info ENDS -->
@@ -238,7 +174,7 @@
           <!-- <img  src="img/vihari-3/site-images/16.jpg" style="height:80vh;" class="col-md-12 border rounded">
           <div style="position:absolute;z-index: 20;top:520px;left:410px;background: linear-gradient(to right, rgb(182, 244, 146,0.5), rgb(51, 139, 147,0.5));width:60vh;border:1px solid none;" class="rounded d-flex flex-column align-items-center justify-content-center"><h1 style="color:white;" >VIHARI-4</h1><h4 style="color:white;">GOMPA</h4></div>
         </div> -->
-        <div class="mt-3 row " style="position:relative">
+        <div class="mt-3 row property-hero" style="position:relative">
           <img src="img/vihari-3/site-images/16.jpg" style="height:80vh;" class="col-md-12 border rounded">
           <div class="centered-text rounded d-flex flex-column align-items-center justify-content-center" style="position: absolute;
           top: 60%; /* Adjust this value to set the vertical position */
