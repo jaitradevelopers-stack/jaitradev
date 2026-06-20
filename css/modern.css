@@ -22,6 +22,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -29,7 +31,15 @@ body {
   color: var(--gray-700);
   background: #fff;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
+}
+
+.container-xxl.bg-white.p-0 {
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -235,6 +245,19 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media (max-width: 991.98px) {
+  .nav-bar {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .navbar {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+
   .navbar-collapse {
     padding: 0.5rem 0 1rem;
   }
@@ -804,6 +827,10 @@ img.img-fluid {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 !important;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .site-gallery-section .gallery-grid .col-md-4 {
@@ -1029,5 +1056,67 @@ img.img-fluid {
   .amenities-grid .col-md-3,
   .amenity-item {
     width: 100%;
+  }
+}
+
+/********** Mobile horizontal overflow fixes **********/
+
+.container-fluid,
+.container-fluid.p-0,
+.page-section,
+.site-gallery-section,
+.layout-section,
+.amenities-section,
+.benefits-section,
+.highlights-section,
+.location-highlights-section,
+.cta-section {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.container-fluid.p-0 > .row:not(.g-0),
+.benefits-section .row:not(.g-0) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.gallery-grid,
+.gallery-grid.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.header-carousel,
+.owl-carousel,
+.owl-stage-outer {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header-carousel .owl-nav {
+  left: 0.5rem !important;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+@media (max-width: 575.98px) {
+  .top-bar-item,
+  .top-bar-item--hours {
+    white-space: normal;
+  }
+
+  .navbar-brand {
+    max-width: calc(100% - 56px);
+  }
+
+  .navbar-brand h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
