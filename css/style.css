@@ -6,6 +6,11 @@
   --dark: #0e2e50;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -67,10 +72,18 @@
 /*** Navbar ***/
 .nav-bar {
   position: relative;
-  margin-top: 45px;
-  padding: 0 3rem;
+  margin-top: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100%;
+  padding: 0;
   transition: 0.5s;
   z-index: 9999;
+}
+
+.nav-bar.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .nav-bar.sticky-top {
@@ -80,6 +93,8 @@
 }
 
 .navbar {
+  width: 100%;
+  margin: 0;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -106,6 +121,10 @@
   outline: none;
 }
 
+.navbar-light .navbar-nav .nav-link:last-child {
+  margin-right: 0;
+}
+
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary);
@@ -115,6 +134,17 @@
   .nav-bar {
     margin: 0;
     padding: 0;
+  }
+
+  .navbar .navbar-brand {
+    max-width: calc(100% - 60px);
+  }
+
+  .navbar .navbar-brand h1 {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .navbar-light .navbar-nav .nav-link {
