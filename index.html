@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -37,13 +37,63 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
     <!-- Icon of Jaitri Developers -->
     <link rel="icon" href="img/Jaitra-Dev.png" />
-    <link href="css/modern.css" rel="stylesheet" />
+    <style>
+         .icon-large {
+    font-size: 1rem; /* Adjust the size as needed */
+    
+    
+    
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .top-contact-strip {
+    margin: 0;
+  }
+
+  .nav-bar {
+    margin-top: 0 !important;
+  }
+
+  .top-contact-strip .contact-col {
+    overflow-wrap: anywhere;
+  }
+
+  @media (max-width: 991.98px) {
+    .navbar .navbar-brand h1 {
+      font-size: 1rem;
+    }
+
+    .navbar .navbar-brand {
+      max-width: calc(100% - 60px);
+    }
+
+    .top-contact-strip .contact-col {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      justify-content: center !important;
+      flex-wrap: wrap;
+      gap: 6px;
+      text-align: center;
+    }
+
+    .past-projects-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+   
+    </style>
   </head>
 
   <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="container-fluid bg-white p-0">
       <!-- Spinner Start -->
       <div
         id="spinner"
@@ -60,32 +110,45 @@
       <!-- Spinner End -->
 
       <!-- Contact Info STARTS -->
-      <div class="top-bar">
-        <div class="top-bar-contact">
-          <span class="top-bar-item">
-            <i class="bi bi-telephone-fill"></i>
-            <a href="tel:+919988838367">+91 9988838367</a>
-          </span>
-          <span class="top-bar-item">
-            <i class="bi bi-envelope-open-fill"></i>
-            <a href="mailto:jaitradevelopers@gmail.com">jaitradevelopers@gmail.com</a>
-          </span>
-          <span class="top-bar-item top-bar-item--hours">
-            <i class="bi bi-clock-history"></i>
-            OPENING: 09:00AM - 06:00PM
-          </span>
+      <div class="row g-0 top-contact-strip" style="color: white;font-size:15px;">
+        <div
+          class="col-md-8 bg-dark d-flex align-items-center justify-content-between text-center text-white contact-col"
+          style="padding-left: 15px; padding-right: 15px"
+        >
+          <!-- <span
+            ><i class="bi bi-telephone-fill text-secondary">&nbsp;&nbsp;</i
+            ><span style="color: lavender">+91 9988838367</span></span
+          > -->
+          <span
+            ><i class="bi bi-envelope-open-fill text-secondary"></i>&nbsp;&nbsp;</i
+            ><span style="color: lavender">jaitradevelopers@gmail.com</span></span
+          >
+          <span
+            ><i class="bi bi-clock-history text-secondary"></i>&nbsp;&nbsp;</i
+            ><span style="color: lavender">OPENING: 09:00AM - 06:00PM</span></span
+          >
+          <span
+            ><i class="bi bi-telephone-fill text-secondary"></i>&nbsp;&nbsp;</i
+            ><span style="color: lavender">+91 9988838367</span></span
+          >
+          
         </div>
-        <div class="top-bar-social">
-          <a href="https://www.facebook.com/profile.php?id=61559593419435" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/jaitradevelopers?utm_source=qr&igsh=MTIyNnZkaTZ2eTMzcg==s" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://t.me/Jaitradevelopers" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
-          <a href="https://whatsapp.com/channel/0029Vabd7fxA2pL6AJnZa340" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <div class="col-md-4 bg-dark p-3 text-center contact-col">
+          <a href="https://www.facebook.com/profile.php?id=61559593419435" 
+          target="_blank"><i class="bi bi-facebook " style="color:lavender"></i></a>
+          <a href="https://www.instagram.com/jaitradevelopers?utm_source=qr&igsh=MTIyNnZkaTZ2eTMzcg==s"
+          target="_blank"><i class="bi bi-instagram" style="color:lavender;margin-left:16px;" ></i></a>
+          <a href="https://t.me/Jaitradevelopers"
+          target="_blank"><i class="bi bi-telegram" style="color:lavender;margin-left:16px;" ></i></a>
+          <a href="https://whatsapp.com/channel/0029Vabd7fxA2pL6AJnZa340"
+          target="_blank"><i class="bi bi-whatsapp" style="color:lavender;margin-left:16px;" ></i></a>
+          
         </div>
       </div>
       <!-- Contact Info ENDS -->
       <!-- Navbar Start -->
-      <div class="container-fluid nav-bar bg-transparent">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+      <div class="container-fluid nav-bar bg-transparent p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-0">
           <a
             href="index.html"
             class="navbar-brand d-flex align-items-center text-center"
@@ -1597,15 +1660,15 @@
       <!-- Testimonial End -->
 
       <!-- Highlights Start -->
-      <div class="container-fluid highlights-section page-section">
-        <div class="row g-0 flex-column flex-md-row align-items-center">
+      <div class="container-fluid header bg-white p-0 mt-2">
+        <div class="row g-0 flex-column flex-md-row">
           <div class="col-md-6 p-5 mt-lg-5">
             <h4 class="display-7 animated fadeIn mb-1">
               <!-- Find A <span class="text-primary">Perfect Home</span> To Live With
               Your Family  -->
-              <span class="section-title">Project Highlights</span>
+              <span class="p-3 text-secondary" >Project Highlights </span>
             </h4>
-            <div class="row p-3 highlights-content">
+            <div class="row p-3">
               <div class="col-md-12">
                 <!-- <ul
                   class="p-5 text-seconary"
@@ -1744,15 +1807,15 @@
       </div>
       <!-- Highlight End -->
       <!-- Location Highlights Start -->
-      <div class="container-fluid location-highlights-section page-section">
-        <div class="row g-0 align-items-start flex-column flex-md-row">
+      <div class="container-fluid header bg-white p-0 mt-2">
+        <div class="row g-0 align-items-center flex-column flex-md-row">
           <div class="col-md-12 p-5 mt-lg-5">
             <h4 class="display-7 animated fadeIn mb-1">
               <!-- Find A <span class="text-primary">Perfect Home</span> To Live With
               Your Family  -->
-              <span class="section-title">Location Highlights</span>
+              <span class="text-secondary p-3">Location Highlights </span>
             </h4>
-            <div class="row p-3 highlights-content g-4">
+            <div class="row p-3">
               <div class="col-md-6">
                 <!-- <ul
                   class="p-5 "
@@ -1865,7 +1928,7 @@
               <span class="text-secondary p-3">Check Our Past Projects </span>
             </h4>
             <div class="row">
-              <div class="col-md-12 d-flex">
+              <div class="col-md-12 d-flex past-projects-row">
                 
                 <div class="col-md-3 p-2 d-flex flex-column align-items-center justify-content-center ">
                   
@@ -1972,14 +2035,12 @@
             <div class="col-lg-12 col-md-12">
               <h5 class="text-white mb-4">Get In Touch</h5>
               <p class="mb-2">
-                <i class="fa fa-map-marker-alt me-3"></i>Flat No. 404, Neelagiri
-                Towers, Madhavadara Road, Behind Murali Nagar D-Mart,
-                Visakhapatnam - 530007
+                <i class="fa fa-map-marker-alt me-3"></i>50-117-17/B, Besire Mythri INfra Structure & Mining, Hill View Layout, Seethammaadhara, VSP
               </p>
-              <p class="mb-2">
+              <!-- <p class="mb-2">
                 <i class="fa fa-phone-alt me-3"></i>+91 9988838367, +91
                 8499969716
-              </p>
+              </p> -->
               <p class="mb-2">
                 <i class="fa fa-envelope me-3"></i>jaitradevelopers@gmail.com
               </p>
